@@ -16,5 +16,35 @@
     <script defer src="./js/script.js"></script>
 </head>
 <body>
+    <div class="container w-50">
+        <h2 class="mt-5">Controlla se la tua parola è palindroma!</h2>
+        <div class="input-group flex-nowrap">
+            <input type="text" class="form-control my-1" placeholder="Inserisci la parola da controllare" id="word">
+        </div>
+        <button class="btn btn-primary my-1" id="button">Controlla</button>
+        <h4 class="my-4">Risultato: <span id="result"></span></h4>
+    </div>
+    <hr>
+    <div class="container w-50">
+        <h2 class="mt-5">Giochiamo a Pari e Dispari!</h2>
+        <div class="input-group flex-nowrap">
+            <input type="text" class="form-control my-1" placeholder="Inserisci un numero da 1 a 5" id="number">
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="pari" id="pari">
+            <label class="form-check-label" for="pari">
+              Pari
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="dispari" id="dispari">
+            <label class="form-check-label" for="dispari">
+              Dispari
+            </label>
+          </div>
+          <button class="btn btn-primary my-3" id="play">Gioca</button>
+        <h4 class="my-4">Numero CPU: <span id="cpu-number"></span></h4>
+        <h4 class="my-4">Vincitore: <span id="winner"></span></h4>
+    </div>
 </body>
 </html>
